@@ -15,17 +15,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ekeneautoscrap.com/">
+    <meta property="og:url" content="https://ekene-autoscrap.netlify.app/">
     <meta property="og:title" content="Ekene AutoScrap - Quality Used Car Parts & Scrapyard">
     <meta property="og:description" content="Find affordable, reliable used car parts salvaged from quality vehicles. Save up to 70% compared to new parts.">
-    <meta property="og:image" content="https://ekeneautoscrap.com/images/og-image.jpg">
+    <meta property="og:image" content="">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ekeneautoscrap.com/">
+    <meta property="twitter:url" content="https://ekene-autoscrap.netlify.app/">
     <meta property="twitter:title" content="Ekene AutoScrap - Quality Used Car Parts & Scrapyard">
     <meta property="twitter:description" content="Find affordable, reliable used car parts salvaged from quality vehicles. Save up to 70% compared to new parts.">
-    <meta property="twitter:image" content="https://ekeneautoscrap.com/images/twitter-image.jpg">
+    <meta property="twitter:image" content="">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -35,36 +35,44 @@
 <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://ekeneautoscrap.com/">
+    <link rel="canonical" href="https://ekene-autoscrap.netlify.app/">
     
     <title>Ekene AutoScrap - Quality Used Car Parts</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <i class="fas fa-car-crash"></i>
-                    <h1>Ekene AutoScrap</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#home" class="active">Home</a></li>
-                        <li><a href="#products">Parts</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="cart-icon" id="cart-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count">0</span>
-                </div>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-car-crash"></i>
+                <h1>Ekene AutoScrap</h1>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="main-nav">
+                <button class="mobile-menu-close" id="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#products">Parts</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -144,101 +152,102 @@
     </section>
 
     <!-- Contact Section -->
-<section class="contact-section" id="contact">
-    <div class="container">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <p>Have questions about a specific part or need assistance finding what you need? Our team is here to help.</p>
-                
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>Yard Location</h4>
-                        <p>Bezuidenhout Valley Johannesburg 2094</p>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about a specific part or need assistance finding what you need? Our team is here to help.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Yard Location</h4>
+                            <p>Bezuidenhout Valley Johannesburg 2094</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+27 786591713</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <a href="https://wa.me/27786591713" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px;">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+27 786591713</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Emmanuelekene2307@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Yard Hours</h4>
+                            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
+                            <p>Saturday: 8:00 AM - 1:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+27 786591713</p>
-                    </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
                 </div>
-                
-                <div class="contact-item">
-                    <i class="fab fa-whatsapp"></i>
-                    <div>
-                        <h4>WhatsApp</h4>
-                        <p>+27 786591713</p>
-                    </div>
-                </div> <!-- This closing div was missing -->
-                
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>Emmanuelekene2307@gmail.com</p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-clock"></i>
-                    <div>
-                        <h4>Yard Hours</h4>
-                        <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
-                        <p>Saturday: 8:00 AM - 1:00 PM</p>
-                        <p>Sunday: Closed</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="contact-form">
-                <h3>Send Us a Message</h3>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="contact-name">Full Name</label>
-                        <input type="text" id="contact-name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Email</label>
-                        <input type="email" id="contact-email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-subject">Subject</label>
-                        <input type="text" id="contact-subject" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-message">Message</label>
-                        <textarea id="contact-message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn" style="width: 100%;">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Cart Sidebar -->
-    <div class="overlay" id="overlay"></div>
-    <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-sidebar">
         <div class="cart-header">
             <h3>Your Cart</h3>
-            <button class="close-cart" id="close-cart">
+            <button class="close-cart">
                 <i class="fas fa-times"></i>
             </button>
         </div>
-        <div class="cart-items" id="cart-items">
+        <div class="cart-items">
             <!-- Cart items will be dynamically added here -->
         </div>
         <div class="cart-footer">
             <div class="cart-total">
                 <span>Total:</span>
-                <span id="cart-total">R0.00</span>
+                <span>R<span id="cart-total-price">0.00</span></span>
             </div>
             <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
         </div>
@@ -328,7 +337,7 @@
                     <h3>Contact Us</h3>
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> 123 Salvage Street, Johannesburg</li>
-                        <li><i class="fas fa-phone"></i> +27 </li>
+                        <li><i class="fas fa-phone"></i> +27 786591713</li>
                         <li><i class="fas fa-envelope"></i> Emmanuelekene2307@gmail.com</li>
                     </ul>
                 </div>
