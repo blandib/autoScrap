@@ -16,6 +16,13 @@ const products = [
     { id: 15, name: "vehicle bumper covers", category: "body", price: 3200.00, condition: "fair", image: "image/car232.jpg" },
     { id: 16, name: "Ford Fiesta", category: "body", price: 5800.00, condition: "poor", image: "image/cars281.jpg" },
     { id: 17, name: "Ford Focus sedan", category: "body", price: 9800.00, condition: "good", image: "image/car211.jpg" },
+    { id: 17, name: "Volkswagen Polo Vivo", category: "body", price: 9800.00, condition: "good", image: "image/car41.jpg" },
+    { id: 17, name: "Chevrolet HHR", category: "body", price: 9800.00, condition: "fair", image: "image/car40.jpg" },
+    { id: 17, name: "Kia Picanto", category: "body", price: 6800.00, condition: "poor", image: "image/car38.jpg" },
+    { id: 17, name: "Ford Focus sedan", category: "body", price: 9800.00, condition: "good", image: "image/car35.jpg" },
+    { id: 17, name: "Ford Focus 1.6i seda", category: "body", price: 9900.00, condition: "good", image: "image/car36.jpg" },
+    { id: 17, name: "Ford Fiesta hatchback", category: "body", price: 5800.00, condition: "good", image: "image/car33.jpg" },
+    { id: 17, name: "silver Audi Q5", category: "body", price: 9800.00, condition: "good", image: "image/car31.jpg" },
 ];
 
 // Debug: Test if image exists
@@ -127,14 +134,30 @@ function setupEventListeners() {
     });
 
     // Close mobile menu when clicking links
-    const navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            mainNav.classList.remove('active');
-            mobileOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    });
+ const navLinks = document.querySelectorAll('header nav a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // stop instant jump
+    const targetId = this.getAttribute('href'); // e.g. "#about"
+    const targetSection = document.querySelector(targetId);
+
+    // Close mobile menu first
+    mainNav.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+
+    // Delay the scroll slightly to allow the menu to close
+    setTimeout(() => {
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 300);
+  });
+});
+
+
+    
 
     // Cart functionality
     cartIcon.addEventListener('click', function() {
@@ -159,6 +182,9 @@ function setupEventListeners() {
         cartSidebar.classList.remove('active');
         cartOverlay.classList.remove('active');
         document.body.style.overflow = '';
+        cartSidebar.classList.remove('active'); // hide the cart
+        checkoutForm.classList.add('active'); // show the checkout
+        window.scrollTo(0, 0); // scroll to top just in case
     });
 
     // Checkout process
@@ -613,3 +639,7 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};

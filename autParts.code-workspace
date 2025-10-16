@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Desktop/image"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "autParts"
+	}
+}
